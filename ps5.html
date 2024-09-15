@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giga Games</title>
+    <link rel="icon" href="images/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+    <script src="javasxript/index.js" defer></script>
+    <script src="javasxript/slide.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Logotipo Giga Games" />
+        <span>Giga Games</span>
+      </div>
+      <button id="toggle-header" class="toggle-header">Minimizar</button>
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ps4.html">PS4</a></li>
+          <li><a href="ps5.html">PS5</a></li>
+          <li><a href="Xbox series.html">Xbox Series X/S</a></li>
+          <li><a href="Xbox one.html">Xbox One</a></li>
+          <li><a href="nintendo.html">Nintendo</a></li>
+          <li><a href="we.html">Quem somos</a></li>
+          <li>
+            <a
+              href="https://wa.me/5517988018966?text=Ol%C3%A1%2C%20me%20interresei%20nos%20jogos%20do%20site!"
+              class="whatsapp-button"
+              target="_blank">
+              Fale Conosco pelo WhatsApp
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="slider">
+      <div class="slider-content">
+        <input type="radio" name="btn-radio" id="radio1" checked />
+        <input type="radio" name="btn-radio" id="radio2" />
+        <input type="radio" name="btn-radio" id="radio3" />
+
+        <div class="slide-box primeiro">
+          <img
+            class="img-desktop"
+            src="images/Resident Evil.png.png"
+            alt="Resident Evil" />
+          <img
+            class="img-mobile"
+            src="images/Resident EvilMo.png.png"
+            alt="Resident Evil" />
+        </div>
+
+        <div class="slide-box">
+          <img class="img-desktop" src="images/avatar.png.png" alt="Avatar" />
+          <img class="img-mobile" src="images/avatarmo.png.png" alt="Avatar" />
+        </div>
+
+        <div class="slide-box">
+          <img
+            class="img-desktop"
+            src="images/mario.png.png"
+            alt="Super Mario" />
+          <img
+            class="img-mobile"
+            src="images/mariomo.png.png"
+            alt="Super Mario" />
+        </div>
+
+        <div class="nav-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+
+        <div class="nav-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #e91313;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+.menu li {
+  padding: 5px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.icons a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/*Parte dos jogos */
+h1 {
+  text-align: center;
+}
+
+.List-de-jogo {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  margin-top: 50px;
+}
+
+.games {
+  text-align: center;
+  margin: 10px;
+  padding-top: 20px;
+  max-width: 200px;
+}
+
+.games img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.games img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(187, 17, 17, 0.5);
+}
+
+.games h3 {
+  font-size: 1.2em;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.game-comment p {
+  font-size: 0.9em;
+  color: #000000;
+  margin-top: 5px;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+h3 {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #666;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 1em;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  border-color: #bbb;
+}
+
+select:focus {
+  outline: none;
+  border-color: #e91313;
+  box-shadow: 0px 0px 5px rgba(233, 19, 19, 0.5);
+}
+
+/* Estilização para o p.game-comment */
+.game-comment {
+  font-size: 1em;
+  color: #333;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.game-comment .price {
+  color: #e91313;
+  font-size: 1.2em;
+}
+
+/* dispositivos móveis */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 10px;
+  }
+
+  nav {
+    justify-content: flex-start;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .List-de-jogo {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 5px;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+
+  .menu {
+    gap: 6px;
+  }
+
+  .List-de-jogo {
+    padding: 10px 0;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 0.9em;
+  }
+
+  select {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  .game-comment {
+    font-size: 0.9em;
+  }
+
+  .game-comment .price {
+    font-size: 1em;
+  }
+}
+/* Estilo para o botão de minimizar */
+.toggle-header {
+  background-color: #e91313;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9em;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-header:hover {
+  background-color: #bb1111;
+  transform: scale(1.05);
+}
+
+.toggle-header:active {
+  background-color: #990f0f;
+  transform: scale(0.98);
+}
+
+.header.minimized {
+  padding: 5px 10px;
+  transition: padding 0.3s ease;
+}
+
+.header.minimized .logo img {
+  height: 30px;
+  transition: height 0.3s ease;
+}
+
+.header.minimized .menu {
+  display: none;
+}
+
+.header.minimized #toggle-header {
+  font-size: 0.8em;
+  padding: 3px 8px;
+  transition: font-size 0.3s ease, padding 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .toggle-header {
+    padding: 5px 10px;
+    font-size: 0.9em;
+  }
+
+  .header.minimized #toggle-header {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .toggle-header {
+    padding: 4px 8px;
+    font-size: 0.8em;
+  }
+
+  .header.minimized #toggle-header {
+    font-size: 0.7em;
+  }
+}

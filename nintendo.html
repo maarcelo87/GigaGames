@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giga Games</title>
+    <link rel="icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+    <script src="javasxript/index.js" defer></script>
+    <script src="javasxript/slide.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Logotipo Giga Games" />
+        <span>Giga Games</span>
+      </div>
+      <button id="toggle-header" class="toggle-header">Minimizar</button>
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ps4.html">PS4</a></li>
+          <li><a href="ps5.html">PS5</a></li>
+          <li><a href="Xbox series.html">Xbox Series X/S</a></li>
+          <li><a href="Xbox one.html">Xbox One</a></li>
+          <li><a href="nintendo.html">Nintendo</a></li>
+          <li><a href="we.html">Quem somos</a></li>
+          <li>
+            <a
+              href="https://wa.me/5517988018966?text=Ol%C3%A1%2C%20me%20interresei%20nos%20jogos%20do%20site!"
+              class="whatsapp-button"
+              target="_blank">
+              Fale Conosco pelo WhatsApp
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="slider">
+      <div class="slider-content">
+        <input type="radio" name="btn-radio" id="radio1" checked />
+        <input type="radio" name="btn-radio" id="radio2" />
+        <input type="radio" name="btn-radio" id="radio3" />
+
+        <div class="slide-box primeiro">
+          <img
+            class="img-desktop"
+            src="images/Resident Evil.png.png"
+            alt="Resident Evil" />
+          <img
+            class="img-mobile"
+            src="images/Resident EvilMo.png.png"
+            alt="Resident Evil" />
+        </div>
+
+        <div class="slide-box">
+          <img class="img-desktop" src="images/avatar.png.png" alt="Avatar" />
+          <img class="img-mobile" src="images/avatarmo.png.png" alt="Avatar" />
+        </div>
+
+        <div class="slide-box">
+          <img
+            class="img-desktop"
+            src="images/mario.png.png"
+            alt="Super Mario" />
+          <img
+            class="img-mobile"
+            src="images/mariomo.png.png"
+            alt="Super Mario" />
+        </div>
+
+        <div class="nav-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+
+        <div class="nav-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+      </div>
+    </section>
+
+    <div class="Nintendo Switch">
+        <h1>Nintendo Switch</h1>
+        <section class="List-de-jogo">
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Animal Crossing New Horizons.png"
+                alt="" />
+              <h3>Animal Crossing New Horizons- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+                <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+                <option value="189">Mídia digital - R$189,00 via Pix</option>
+              </select>
+              <p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Assassin s Creed The Rebel Collection.png"
+                alt="" />
+              <h3>Assassin's Creed The Rebel Colletion- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+                <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+                <option value="189">Mídia digital - R$189,00 via Pix</option>
+              </select>
+              <p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Batman Arkham Trilogy.png"
+                alt="" />
+              <h3>Batman Arkham Trilogy- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+                <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+                <option value="189">Mídia digital - R$189,00 via Pix</option>
+              </select>
+              <p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/ben 10 power trip.png"
+                alt="" />
+              <h3>Bem 10 power Trip- Aluguel 6 dais
+
+              </h3>
+              <select onchange="updatePrice(this)">
+                <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+                <option value="189">Mídia digital - R$189,00 via Pix</option>
+              </select>
+              <p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Captain Tsubasa.png"
+                alt="" />
+              <h3>Captain Tsubasa- Aluguel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+                <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+                <option value="189">Mídia digital - R$189,00 via Pix</option>
+              </select>
+              <p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+        </section>
+        
+        <section class="List-de-jogo">
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Cars 3 Driven to Win.png"
+                alt="" />
+              <h3>Car 3 Driven to win- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+                <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+                <option value="189">Mídia digital - R$189,00 via Pix</option>
+              </select>
+              <p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/dark souls remastered.png"
+                alt="" />
+              <h3>Dark Souls Remastered- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+                <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+                <option value="189">Mídia digital - R$189,00 via Pix</option>
+              </select>
+              <p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Digimon Story Cyber Sleuth.png"
+                alt="" />
+              <h3>Digimon Story Cyber Sleuth- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+                <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+                <option value="189">Mídia digital - R$189,00 via Pix</option>
+              </select>
+              <p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Digimon World Next Order.png" alt="" />
+              <h3>Digimon Word Next Order- Aluguel 6 dais
+
+              </h3>
+              <select onchange="updatePrice(this)">
+                <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+                <option value="189">Mídia digital - R$189,00 via Pix</option>
+              </select>
+              <p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Disney Illusion Island.png"
+                alt="" />
+              <h3>Disney Illusion Island- Alugel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+        </section>
+
+        <section class="List-de-jogo">
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Donkey Kong Country Tropical Freeze Donkey Kong Country.png"
+                alt="" />
+              <h3>Donkey Kong Country Tropical Freeze- Aluguel 6 dias
+              </h3>
+              <p class="game-comment">
+               A partir de R$20,00 via pix
+              </p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Dragon Ball Xenoverse 2.png"
+                alt="" />
+              <h3>Dragon Ball Xenoverse 2- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Dragon Ball Z Kakarot.png"
+                alt="" />
+              <h3>Dragon Ball Z kakarot- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/FIFA 24.png" alt="" />
+              <h3>Fifa 24- Aluguel 6 dais
+
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/fifa 2023.png"
+                alt="" />
+              <h3>Fifa 23- Alugel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+        </section>
+
+        <section class="List-de-jogo">
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Harvest Moon One World.png"
+                alt="" />
+              <h3>Harvest Moon World- Aluguel 6 dias
+              </h3>
+              <p class="game-comment">
+               A partir de R$20,00 via pix
+              </p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/hogwarts.png"
+                alt="" />
+              <h3>Horgwarts Legacy- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/hyrule warriors definitive edition.png"
+                alt="" />
+              <h3>Hyule warriors definitive- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Immortals Fenyx Rising.png" alt="" />
+              <h3>Immortals Fenyx Rising- Aluguel 6 dais
+
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/It Takes Two.png"
+                alt="" />
+              <h3>It Takes Two- 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+        </section>
+
+        <section class="List-de-jogo">
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/just dance  2023.png"
+                alt="" />
+              <h3>Just Dance 2023- Aluguel 6 dias
+              </h3>
+              <p class="game-comment">
+               A partir de R$20,00 via pix
+              </p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/just dance 2024 edition.png"
+                alt="" />
+              <h3>Just dance 2024- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Legacy Of The Duelist Link.png"
+                alt="" />
+              <h3>Legacy Of The Duelist Link Evolution- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Lego Dc Super Villains.png" alt="" />
+              <h3>Lego Dc Super Villains- Aluguel 6 dais
+
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/LEGO Jurassic World.png"
+                alt="" />
+              <h3>Lego Jurassic World- Alugel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+        </section>
+
+        <section class="List-de-jogo">
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/LEGO Marvel Super Heroes 2.png"
+                alt="" />
+              <h3>Lego Marvel Super Heroes 2- Aluguel 6 dias
+              </h3>
+              <p class="game-comment">
+               A partir de R$20,00 via pix
+              </p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/LEGO Worlds.png"
+                alt="" />
+              <h3>Lego Wordls- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Luigi's mansion 3.png"
+                alt="" />
+              <h3>Luigi's mansion- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Mario & Sonic at the Olympic Games Tokyo 2020.png" alt="" />
+              <h3>Mario & Sonic at the Olympic Games- Aluguel 6 dais
+
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/mario + rabbids kingdom.png"
+                alt="" />
+              <h3>Mario + Rabbids Kingdom Battle- Alugel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+        </section>
+
+        <section class="List-de-jogo">
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Mario + Rabbids Sparks Of Hope.png"
+                alt="" />
+              <h3>Mario + Rabbids Sparks Of Hope- Aluguel 6 dias
+              </h3>
+              <p class="game-comment">
+               A partir de R$20,00 via pix
+              </p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/mario kart 8 deluxe.png"
+                alt="" />
+              <h3>Mario kart 8 Deluxe- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/mario odyssey.png"
+                alt="" />
+              <h3>Super Mario Odyssey- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Mario Party Superstars Party.png" alt="" />
+              <h3>Mario Party Superstars- Aluguel 6 dais
+
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Mario Strikers Battle League.png"
+                alt="" />
+              <h3>Mario Strikers Battle League- Alugel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+        </section>
+
+        <section class="List-de-jogo">
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Mario Vs Donkey Kong.png"
+                alt="" />
+              <h3>Mario Vs Donkey Kong- Aluguel 6 dias
+              </h3>
+              <p class="game-comment">
+               A partir de R$20,00 via pix
+              </p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Marvel Ultimate Alliance 3 The Black Order.png"
+                alt="" />
+              <h3>Marvel Ultimate Alliance 3 The Black Order- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Metroid Prime Remastered.png"
+                alt="" />
+              <h3>Metroid Prime Remastered- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/minecraft.png" alt="" />
+              <h3>Minecraft- Aluguel 6 dais
+
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/monster hunter rise.png"
+                alt="" />
+              <h3>Monster Hunter Rise- Alugel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+        </section>
+
+        <section class="List-de-jogo">
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Mortal Kombat 11 Ultimate.png"
+                alt="" />
+              <h3>Mortal Kombat 11 Ultimate- Aluguel 6 dias
+              </h3>
+              <p class="game-comment">
+               A partir de R$20,00 via pix
+              </p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Mortal Kombat 11.png"
+                alt="" />
+              <h3>Mortal Kombat 11- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Naruto Shippuden Ultimate Ninja Storm 4 Road to Boruto 2.png"
+                alt="" />
+              <h3>Naruto Shippuden Ultimate Ninja Storm 4 Road to Boruto 2- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/New Pokémon Snap.png" alt="" />
+              <h3>New Pokémon Snap- Aluguel 6 dais
+
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/New Super Lucky's Tale.png"
+                alt="" />
+              <h3>New Super Lucky's Tale- Alugel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+        </section>
+
+        <section class="List-de-jogo">
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/New Super Mario Bros. U Deluxe.png"
+                alt="" />
+              <h3>New super Mario Bros.U Deluxe- Aluguel 6 dias
+              </h3>
+              <p class="game-comment">
+               A partir de R$20,00 via pix
+              </p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Nintendo Switch Sports.png"
+                alt="" />
+              <h3>Nintendo Switch Sports- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/pokemon arceus.png"
+                alt="" />
+              <h3>Pokémon Arceus- Aluguel 6 dias
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/pokemon brilliant diamond.png" alt="" />
+              <h3>Pokémon Brilliant Diamond- Aluguel 6 dais
+
+              </h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/pokemon lets go eevee.png"
+                alt="" />
+              <h3>Pokémon Lest's go Eevee!- Alugel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+        </section>
+        
+        <section class="List-de-jogo">
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/pokemon lets go pikachu.png"
+                alt="" />
+              <h3>Pokémon Let's Go Pikachu - Aluguel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Pokémon Mystery Dungeon Rescue Team DX.png"
+                alt="" />
+              <h3>Pokémon Mystery Dungeon Rescue Team DX - Aluguel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/pokemon scarlet.png"
+                alt="" />
+              <h3>Pokémon Scarlet - Aluguel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/pokemon shield.png"
+                alt="" />
+              <h3>Pokémon Shield - Aluguel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/pokémon Sword.png"
+                alt="" />
+              <h3>Pokémon Sword - Aluguel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+          </section>
+
+          <section class="List-de-jogo">
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/pokemon violet.png"
+                alt="" />
+              <h3>Pokémon Violet- Aluguel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Pokkén Tournament DX.png"
+                alt="" />
+              <h3>Pokkén Tournament Dx- Aluguel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Princesa Peach Showtime.png"
+                alt="" />
+              <h3>Princesa Peach Sowtime- Aluguel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Red Dead Redemption.png"
+                alt="" />
+              <h3>Red Dead Redemption - Aluguel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+            <div class="games">
+              <img
+                src="catalogo/catalogo nintendo/Resident Evil 4.png"
+                alt="" />
+              <h3>Resident Evil 4 - Aluguel 6 dias</h3>
+              <select onchange="updatePrice(this)">
+  <option value="20">Aluguel 06 dias - R$20,00 via Pix</option>
+  <option value="189">Mídia digital - R$189,00 via Pix</option>
+</select>
+<p class="game-comment">Preço: R$<span class="price">20,00 </span></p>
+            </div>
+          </section>
+
+          <section class="List-de-jogo">
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/Sonic Forces.png" alt="" />
+                <h3>Sonic Forces - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/splaton 2.png" alt="" />
+                <h3>Splatoon 2 - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/Splatoon 3.png" alt="" />
+                <h3>Splatoon 3 - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/stardew valley switch.png" alt="" />
+                <h3>Stardew Valley - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/story of seasons friend nintendo.png" alt="" />
+                <h3>Story of Seasons: Friends of Mineral Town - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+        </section>
+        
+        <section class="List-de-jogo">
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/story Of Seasons Pioneers Of Olive Town.png" alt="" />
+                <h3>Story Of Seasons: Pioneers Of Olive Town - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/Super Dragon Ball Heroes World.png" alt="" />
+                <h3>Super Dragon Ball Heroes World - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/super mario 3d world+ + Bowser’s Fury.png" alt="" />
+                <h3>Super Mario 3D World + Bowser's Fury - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/Super Mario Bros Wonder.png" alt="" />
+                <h3>Super Mario Bros Wonder - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/super mario maker 2.png" alt="" />
+                <h3>Super Mario Maker 2 - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+        </section>
+        
+        <section class="List-de-jogo">
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/super mario paty.png" alt="" />
+                <h3>Super Mario Party - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/super mario rpg.png" alt="" />
+                <h3>Super Mario RPG - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/super Smash Bros. Ultimate.png" alt="" />
+                <h3>Super Smash Bros. Ultimate - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/team sonic racing.png" alt="" />
+                <h3>Team Sonic Racing - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/The Elder Scrolls V Skyrim.png" alt="" />
+                <h3>The Elder Scrolls V: Skyrim - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+        </section>
+        
+        <section class="List-de-jogo">
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/the legend of zelda breath of the wild.png" alt="" />
+                <h3>The Legend of Zelda: Breath of the Wild - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/The Legend of Zelda Link Awakening.png" alt="" />
+                <h3>The Legend of Zelda: Link's Awakening - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/The Legend of Zelda Skyward.png" alt="" />
+                <h3>The Legend of Zelda: Skyward Sword - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/The Legend of Zelda Tears of the Kingdom.png" alt="" />
+                <h3>The Legend of Zelda: Tears of the Kingdom - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/The Witcher 3 Wild Hunt.png" alt="" />
+                <h3>The Witcher 3: Wild Hunt - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+        </section>
+        
+        <section class="List-de-jogo">
+            <div class="games">
+                <img src="catalogo/catalogo nintendo/Yoshi's Crafted World Yoshi.png" alt="" />
+                <h3>Yoshi's Crafted World - Aluguel 6 dias</h3>
+                <p class="game-comment">
+                    A partir de R$20,00 via pix
+                </p>
+            </div>
+        </section>
+        
+          
+    </div>
+    <script src="slides/slide.js"></script>
+    <script src="../index.js"></script>
+  </body>
+</html>
